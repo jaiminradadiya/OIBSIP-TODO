@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>TODO LIST</h1>
+  </div>
+
+  <div class="container">
+    <div class="input-grid">
+      <h2>Add New Task</h2>
+      <input type="text" id="taskTitle" placeholder="Title">
+      <textarea id="taskDescription" placeholder="Description"></textarea>
+      <button id="saveTask">Save</button>
+    </div>
+
+    <div class="tasks-grid">
+      <div class="task-section">
+        <h2>Pending Tasks</h2>
+        <ul id="pendingTasks"></ul>
+      </div>
+
+      <div class="task-section">
+        <h2>Completed Tasks</h2>
+        <ul id="completedTasks"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
